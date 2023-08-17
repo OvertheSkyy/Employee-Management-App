@@ -1,0 +1,8 @@
+SELECT TOP (1000) [Id]
+      ,[EmpNo]
+      ,[FirstName]
+      ,[LastName]
+      ,[Birthdate]
+      ,[ContactNo]
+      ,[EmailAddress]
+  FROM [EmployeeDB].[dbo].[Employee_Table]

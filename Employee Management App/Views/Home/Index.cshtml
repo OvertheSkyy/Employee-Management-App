@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Employee Management App";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Employee Management App!</h1>
+    <p class="lead">Manage your employess for free.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Employee List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>EmpNo</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Birthdate</th>
+                    <th>ContactNo</th>
+                    <th>EmailAddress</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var employee in Model)
+                {
+                <tr>
+                    <td>@employee.EmpNo</td>
+                    <td>@employee.FirstName</td>
+                    <td>@employee.LastName</td>
+                    <td>@employee.Birthdate.ToShortDateString()</td>
+                    <td>@employee.ContactNo</td>
+                    <td>@employee.EmailAddress</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+            <tr>
+                <td><input type="text" class="form-control" placeholder="EmpNo"></td>
+                <td><input type="text" class="form-control" placeholder="FirstName"></td>
+                <td><input type="text" class="form-control" placeholder="LastName"></td>
+                <td><input type="text" class="form-control" placeholder="Birthdate"></td>
+                <td><input type="text" class="form-control" placeholder="ContactNo"></td>
+                <td><input type="text" class="form-control" placeholder="EmailAddress"></td>
+                <td><button class="btn btn-primary btn-sm" style="background-color:green">Add Employee</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
