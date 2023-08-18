@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Employee_Management_App.Models
 {
@@ -9,9 +10,11 @@ namespace Employee_Management_App.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Home>().ToTable("Employee_Table");
-
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Home>()
+                .ToTable("Employee_Table")
+                .HasKey(e => e.Id)
+                .Property(e => e.Id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
         }
     }
 }

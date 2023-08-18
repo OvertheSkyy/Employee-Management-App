@@ -7,13 +7,13 @@ namespace Employee_Management_App.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class TableMigrationName : IMigrationMetadata
+    public sealed partial class Testing : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(TableMigrationName));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Testing));
         
         string IMigrationMetadata.Id
         {
-            get { return "202308170638058_TableMigrationName"; }
+            get { return "202308180800354_Testing"; }
         }
         
         string IMigrationMetadata.Source

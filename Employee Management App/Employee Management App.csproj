@@ -56,6 +56,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -131,9 +133,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202308170638058_TableMigrationName.cs" />
-    <Compile Include="Migrations\202308170638058_TableMigrationName.designer.cs">
-      <DependentUpon>202308170638058_TableMigrationName.cs</DependentUpon>
+    <Compile Include="Migrations\202308180800354_Testing.cs" />
+    <Compile Include="Migrations\202308180800354_Testing.designer.cs">
+      <DependentUpon>202308180800354_Testing.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Home.cs" />
@@ -193,8 +195,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202308170638058_TableMigrationName.resx">
-      <DependentUpon>202308170638058_TableMigrationName.cs</DependentUpon>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202308180800354_Testing.resx">
+      <DependentUpon>202308180800354_Testing.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

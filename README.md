@@ -3,5 +3,5 @@
 ## sds_net_dev_exam_intern
 
 Missing Features
-+ Add/Create, Edit
++ Add/Create, Delete, Edit
 

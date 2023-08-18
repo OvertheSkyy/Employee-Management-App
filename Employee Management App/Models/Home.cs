@@ -6,8 +6,6 @@ namespace Employee_Management_App.Models
 {
     public class Home
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Required]
@@ -27,8 +25,7 @@ namespace Employee_Management_App.Models
         public DateTime Birthdate { get; set; }
 
         [Required]
-        [StringLength(11)]
-        public string ContactNo { get; set; }
+        public long ContactNo { get; set; }
 
         [Required]
         [StringLength(100)]
